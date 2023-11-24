@@ -41,16 +41,26 @@ function verificarTarefaPorId(id) {
 }
 
 // Testes
+// Adicionar uma tarefa
 console.log(adicionarTarefa({id: 1, titulo: 'Aprender React', descricao: 'Criar interfaces de usuários mais interativas e dinâmicas'}));
 console.log(adicionarTarefa({id: 1, titulo: 'Aprender React', descricao: 'Criar interfaces de usuários mais interativas e dinâmicas'}));
 console.log(adicionarTarefa({id: 2, titulo: 'Dominar o Git', descricao: 'Explorar os comandos'}))
 console.log(adicionarTarefa({id: 3, titulo: 'Ler o livro Clean Code', descricao: 'Melhorar as habilidades de codificação e praticar desenvolvimento mais sustentáveis'}))
 console.log(adicionarTarefa({id: 4, titulo: 'Revisar projeto', descricao: 'Resolver possíveis problemas e garantir o bom funcionamento'}))
+
+imprimirTarefas()
+
+// Editar uma tarefa
+console.log(editarTarefa(4, 'Estudar JavaScript', 'Aprofundar o conhecimento com mais exercícios e projetos pessoais'))
+
+imprimirTarefas()
+
+// Remover uma tarefa salva
 console.log(apagarTarefaPorId(2))
+
+// Listar todas as tarefas salvas
+imprimirTarefas()
+
+// Obter uma tarefa, através de um parâmetro (id)
 console.log(verificarTarefaPorId(3))
 console.log(verificarTarefaPorId(5))
-
-imprimirTarefas()
-
-console.log(editarTarefa(4, 'Estudar JavaScript', 'Aprofundar o conhecimento com mais exercícios e projetos pessoais'))
-imprimirTarefas()
